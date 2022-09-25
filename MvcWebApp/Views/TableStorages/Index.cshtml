@@ -1,0 +1,51 @@
+﻿@model AzureStorage.Library.Models.Product
+<h2>Add Product</h2>
+<form class="form-inline" asp-action="@(ViewBag.isUpdate ? "Update":"Create")" method="post" enctype="application/x-www-form-urlencoded">
+    <input class="form-control mr-1" asp-for="Name" placeholder="Ürün İsmi" />
+    <input class="form-control mr-1" asp-for="Price" placeholder="Ürün Fiyatı" />
+    <input class="form-control mr-1" asp-for="Stock" placeholder="Ürün Stoğu" />
+    <input class="form-control mr-1" asp-for="Color" placeholder="Ürün Rengi" />
+
+    <input hidden class="form-control mr-1" asp-for="RowKey" />
+    <input hidden class="form-control mr-1" asp-for="PartitionKey" />
+    <input hidden class="form-control mr-1" asp-for="ETag" />
+
+    <input class="btn btn-primary" type="submit" value="@(ViewBag.isUpdate ? "Update Product":"Create Product")" />
+</form>
+
+
+<h2>Products</h2>
+<form class="form-inline mb-2" asp-action="Query" method="get">
+    <input class="form-control mr-2" type="number" name="price" />
+    <input type="submit" class="btn btn-dark" value="Search" />
+</form>
+
+<table class="table table-bordered">
+    <tr>
+        <th>RowKey</th>
+        <th>PartitionKey</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Stock</th>
+        <th>Color</th>
+        <th>Actions</th>
+    </tr>
+
+
+    @foreach (var prd in ViewBag.products as List<AzureStorage.Library.Models.Product>)
+    {
+        <tr>
+            <td>@prd.RowKey</td>
+            <td>@prd.PartitionKey</td>
+            <td>@prd.Name</td>
+            <td>@prd.Price</td>
+            <td>@prd.Stock</td>
+            <td>@prd.Color</td>
+
+            <td>
+                <a class="btn btn-sm btn-success mr-1" asp-action="Update" asp-controller="TableStorages" asp-route-rowKey="@prd.RowKey" asp-route-partitionKey="@prd.PartitionKey">Update</a>
+                <a class="btn btn-sm btn-danger" asp-action="Delete" asp-controller="TableStorages" asp-route-rowKey="@prd.RowKey" asp-route-partitionKey="@prd.PartitionKey">Delete</a>
+            </td>
+        </tr>
+    }
+</table>

@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureStorage.Library", "AzureStorage.Library\AzureStorage.Library.csproj", "{360F2886-6A87-4289-9127-0AF0EDEC5A2E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MvcWebApp", "MvcWebApp\MvcWebApp.csproj", "{496478D1-9868-4354-BCFB-E3E46A54313D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QueueConsoleApp", "QueueConsoleApp\QueueConsoleApp.csproj", "{A0C3C305-84B2-4C8C-B887-CA16BB0B5021}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WatermarkProcessFunction", "WatermarkProcessFunction\WatermarkProcessFunction.csproj", "{5D727AE7-B4BC-4F7A-9963-A7D48FD74AF2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{360F2886-6A87-4289-9127-0AF0EDEC5A2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{360F2886-6A87-4289-9127-0AF0EDEC5A2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{360F2886-6A87-4289-9127-0AF0EDEC5A2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{360F2886-6A87-4289-9127-0AF0EDEC5A2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{496478D1-9868-4354-BCFB-E3E46A54313D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{496478D1-9868-4354-BCFB-E3E46A54313D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{496478D1-9868-4354-BCFB-E3E46A54313D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{496478D1-9868-4354-BCFB-E3E46A54313D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0C3C305-84B2-4C8C-B887-CA16BB0B5021}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0C3C305-84B2-4C8C-B887-CA16BB0B5021}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0C3C305-84B2-4C8C-B887-CA16BB0B5021}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0C3C305-84B2-4C8C-B887-CA16BB0B5021}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D727AE7-B4BC-4F7A-9963-A7D48FD74AF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D727AE7-B4BC-4F7A-9963-A7D48FD74AF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D727AE7-B4BC-4F7A-9963-A7D48FD74AF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D727AE7-B4BC-4F7A-9963-A7D48FD74AF2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {36C769E4-84FD-472B-9C8D-E74E06A7FD02}
+	EndGlobalSection
+EndGlobal
